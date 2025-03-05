@@ -1,0 +1,48 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.tipo-cucina {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.orders-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Colonne responsive */
+    gap: 15px;
+}
+
+.order-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    height: 300px; /* Altezza fissa per rendere gli ordini quadrati */
+}
+
+.order-item:hover {
+    transform: translateY(-5px);
+}
+
+.btn {
+    margin-right: 10px;
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-item p {
+    flex-grow: 1;
+}
